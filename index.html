@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <body>
+    <span>Total clicks: 0</span>
     <button id="btn">Click me</button>
   </body>
   <script>
-    const btn = document.getElementById("btn");
+    const button = document.getElementById("btn");
+    function handleClick() {
+      console.log("i have been clicked");
+    }
+    button.addEventListener("click", handleClick);
   </script>
 </html>
